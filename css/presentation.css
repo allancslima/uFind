@@ -1,0 +1,122 @@
+html, body { 
+	height: 100%;
+}
+body {
+	background-color: #f4f4f4;
+}
+
+#top nav {
+	width: 100%;
+	padding: 10px 0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #fff;
+}
+#top nav img {
+	width: 40px; 
+	height: 40px;
+	margin-left: 2vh;
+}
+#top nav a {
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 700;
+	color: #363636;
+}
+#top header {
+	width: 100%;
+	background-color: #00a4d3;
+}
+#top header #content {
+	max-width: 600px;
+	height: 100%;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+#top header #content span {
+	font-size: 50px;
+	text-align: center;
+}
+#top header #content p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+#offerings {
+	padding: 20px;
+	box-sizing: border-box;
+}
+#offerings > span {
+	margin-bottom: 30px;
+	font-size: 36px;
+}
+#offerings div span {
+	font-size: 24px;
+	font-weight: 700;
+}
+#offerings div img {
+	height: 200px;
+	width: 200px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	background-color: #f4f4f4;
+}
+#offerings div p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+footer {
+	width: 100%;
+	padding: 10px 0;
+	justify-content: center;
+	background-color: #FFF;
+	border-top: 1px solid #cecece;
+}
+
+@media screen and (min-height: 630px) {
+	#top {
+		height: auto;
+		min-height: 100%;
+	}
+	#top nav { 
+		height: 10vh; 
+		padding: 0;
+	}
+	#top header { 
+		height: 90vh; 
+	}
+	
+	#offerings {
+		height: 90vh;
+	}
+
+	footer {
+		height: 10vh; 
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#offerings {
+		max-width: 1000px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	#offerings span {
+		width: 100%;
+		text-align: center;
+	}
+	#offerings div {
+		flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+	}
+}
