@@ -7,16 +7,39 @@ body {
 #top nav {
 	width: 100%;
 	padding: 10px 0;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
 	background-color: #00a4d3;
 }
-#top nav a {
+#top nav > a {
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
 	text-decoration: none;
 	font-family: 'Pacifico';
 	font-size: 32px;
-	margin-left: 18px;
+	color: #fff;
+}
+#top nav ul {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#top nav ul li {
+	padding: 20px 0;
+}
+#top nav ul li a {
+	padding: 8px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	color: #00a4d3;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+#top nav ul li a:hover {
+	background-color: transparent;
 	color: #fff;
 }
 #top header {
@@ -72,6 +95,21 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+	#top nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#top nav > a {
+		width: 50%;
+		margin-bottom: 0;
+		text-align: left;
+	}
+	#top nav ul {
+		width: 30%;
+		max-width: 220px;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 	#top header {
 		height: 95vh;
 	}
