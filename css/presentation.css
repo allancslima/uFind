@@ -1,6 +1,5 @@
-html, body { 
-	height: 100%;
-}
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 body {
 	background-color: #f4f4f4;
 }
@@ -11,18 +10,14 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	background-color: #fff;
-}
-#top nav img {
-	width: 40px; 
-	height: 40px;
-	margin-left: 2vh;
+	background-color: #00a4d3;
 }
 #top nav a {
 	text-decoration: none;
-	font-size: 28px;
-	font-weight: 700;
-	color: #363636;
+	font-family: 'Pacifico';
+	font-size: 32px;
+	margin-left: 18px;
+	color: #fff;
 }
 #top header {
 	width: 100%;
@@ -47,26 +42,22 @@ body {
 	line-height: 32px;
 }
 
-#offerings {
+#proposals {
 	padding: 20px;
 	box-sizing: border-box;
 }
-#offerings > span {
-	margin-bottom: 30px;
-	font-size: 36px;
-}
-#offerings div span {
+#proposals div span {
 	font-size: 24px;
 	font-weight: 700;
 }
-#offerings div img {
+#proposals div img {
 	height: 200px;
 	width: 200px;
 	background-color: #fff;
 	margin-bottom: 10px;
 	background-color: #f4f4f4;
 }
-#offerings div p {
+#proposals div p {
 	text-align: center;
 	font-size: 16px;
 	line-height: 28px;
@@ -74,47 +65,29 @@ body {
 
 footer {
 	width: 100%;
-	padding: 10px 0;
+	padding: 20px 0;
 	justify-content: center;
 	background-color: #FFF;
 	border-top: 1px solid #cecece;
 }
 
-@media screen and (min-height: 630px) {
-	#top {
-		height: auto;
-		min-height: 100%;
-	}
-	#top nav { 
-		height: 10vh; 
-		padding: 0;
-	}
-	#top header { 
-		height: 90vh; 
-	}
-	
-	#offerings {
-		height: 90vh;
-	}
-
-	footer {
-		height: 10vh; 
-		padding: 0;
-	}
-}
-
 @media screen and (min-width: 768px) {
-	#offerings {
+	#top header {
+		height: 95vh;
+	}
+
+	#proposals {
 		max-width: 1000px;
+		height: 95vh;
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin: 0 auto;
 	}
-	#offerings span {
+	#proposals span {
 		width: 100%;
 		text-align: center;
 	}
-	#offerings div {
+	#proposals div {
 		flex-grow: 1;
         flex-basis: 150px;
         padding: 0 10px;
