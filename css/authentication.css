@@ -16,9 +16,12 @@ form .brand {
 form .field, .btn {
 	margin-top: 10px;
 }
+form input[type="submit"] {
+	margin-top: 15px;
+}
 #forgot-password {
 	width: 100%;
-	margin: 10px 0 15px;
+	margin-top: 10px;
 	text-align: right;
 }
 #forgot-password a {
