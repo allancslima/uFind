@@ -1,0 +1,30 @@
+body {
+	background-color: #f9f9f9;
+}
+form {
+	width: 280px;
+	margin: 30px auto;
+	padding: 40px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 3px 3px 10px #ccc;
+	background-color: #fff;
+}
+form .brand {
+	margin-bottom: 20px;
+}
+form .field, .btn {
+	margin-top: 10px;
+}
+form input[type="submit"] {
+	margin-top: 15px;
+}
+#forgot-password {
+	width: 100%;
+	margin-top: 10px;
+	text-align: right;
+}
+#forgot-password a {
+	text-decoration: none;
+	color: #505050;
+}

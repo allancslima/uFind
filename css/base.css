@@ -1,16 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	color: #212121;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+/* General */
+
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.brand {
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Pacifico';
+	font-size: 32px;
+	color: #fff;
+}
+.brand-gray {
+	color: #696969;
+}
+
+/* Forms */
+
+.field {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+/* Buttons */
+
+.btn {
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #696969;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #f9f9f9;
+}
+.btn-match-parent {
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.btn-blue {
+	background-color: #039be5;
+	border: none;
+	color: #fff;
+}
+.btn-blue:hover {
+	background-color: #0288d1;
+}
+.btn-blue-white {
+	background-color: #039be5;
+	border-color: #fff;
+	color: #fff;
+}
+.btn-blue-white:hover {
+	background-color: #fff;
+	color: #039be5;
 }
