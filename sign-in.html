@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-	<title>uFind - Cadastrar</title>
+	<title>uFind - Entrar</title>
 	<link rel="icon" href="img/ic_pin.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css">
@@ -12,16 +12,15 @@
 <body>
 	<form class="container">
 		<a class="brand brand-gray" href="index.html">uFind</a>
-		<input class="field" type="text" name="name" placeholder="Nome e sobrenome">
-		<input class="field" type="text" name="course" placeholder="Curso">
-		<input class="field" type="text" name="phone" placeholder="Celular">
 		<input class="field" type="email" name="email" placeholder="Email">
 		<input class="field" type="password" name="password" placeholder="Senha">
-		<input class="field" type="password" name="confirm-password" placeholder="Confirmar senha">
-		<input class="btn btn-match-parent btn-blue" type="submit" name="register" value="CADASTRAR">
+		<div id="forgot-password">
+			<a href="forgot-password.html"><b>Esqueceu a senha?</b></a>
+		</div>
+		<input class="btn btn-match-parent btn-blue" type="submit" name="login" value="ENTRAR">
 		<br><br>
-		<p>Já possui uma conta?</p>
-		<a class="btn" href="signin.html">ENTRAR</a>
+		<p>Não possui uma conta?</p>
+		<a class="btn" href="sign-up.html">CADASTRAR</a>
 	</form>
 </body>
 </html>
