@@ -5,12 +5,11 @@ body {
 #top nav {
 	width: 100%;
 	padding: 10px 0;
-	background-color: #00a4d3;
+	background-color: #039be5;
 }
 #top nav > a {
 	width: 100%;
 	margin-bottom: 15px;
-	color: #fff;
 }
 #top nav ul {
 	width: 100%;
@@ -21,23 +20,9 @@ body {
 #top nav ul li {
 	padding: 20px 0;
 }
-#top nav ul li a {
-	padding: 8px;
-	margin-bottom: 20px;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 700;
-	color: #fff;
-	border: 2px solid #fff;
-	border-radius: 3px;
-}
-#top nav ul li a:hover {
-	background-color: #fff;
-	color: #00a4d3;
-}
 #top header {
 	width: 100%;
-	background-color: #00a4d3;
+	background-color: #039be5;
 }
 #top header #content {
 	max-width: 600px;
@@ -99,7 +84,7 @@ footer {
 	}
 	#top nav ul {
 		width: 30%;
-		max-width: 220px;
+		max-width: 280px;
 		flex-direction: row;
 		justify-content: space-around;
 	}

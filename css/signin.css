@@ -4,43 +4,21 @@ body {
 form {
 	width: 280px;
 	margin: 30px auto;
-	padding: 40px 30px;
-	background-color: #fff;
+	padding: 40px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	box-shadow: 3px 3px 10px #ccc;
+	background-color: #fff;
 }
-form .logo {
-	color: #696969;
-	margin-bottom: 25px;
+form .brand {
+	margin-bottom: 20px;
 }
-form input, button {
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-}
-form input {
-	margin-bottom: 10px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-form button {
-	margin-top: 20px;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 700;
-	background-color: #00a4d3;
-	color: #fff;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-}
-form button:hover {
-	background-color: #00a0d0;
+form .field, .btn {
+	margin-top: 10px;
 }
 #forgot-password {
 	width: 100%;
-	margin-top: 3px;
+	margin: 10px 0 15px;
 	text-align: right;
 }
 #forgot-password a {
