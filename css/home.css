@@ -1,0 +1,40 @@
+body {
+	background-color: #f9f9f9;
+}
+
+#nav-home {
+	background-color: #039be5;
+}
+#nav-home ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+}
+#nav-home ul li {
+	width: 100%;
+}
+#nav-home ul li a {
+	display: inline-block;
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+}
+#nav-home ul li a:hover {
+	background-color: #0288d1;
+}
+
+@media screen and (min-width: 768px) {
+	#nav-home {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#nav-home ul {
+		width: 80%;
+		margin: 0;
+		flex-direction: row;
+	}
+}

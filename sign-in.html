@@ -6,8 +6,9 @@
 	<title>uFind - Entrar</title>
 	<link rel="icon" href="img/ic_pin.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css">
-		<link rel="stylesheet" type="text/css" href="css/authentication.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/authentication.css">
+	<script src="js/sign-in.js"></script>
 </head>
 <body>
 	<form class="container">
@@ -17,7 +18,7 @@
 		<div id="forgot-password">
 			<a href="forgot-password.html"><b>Esqueceu a senha?</b></a>
 		</div>
-		<input class="btn btn-match-parent btn-blue" type="submit" name="login" value="ENTRAR">
+		<input class="btn btn-match-parent btn-blue" type="button" value="ENTRAR" onclick="login()">
 		<br><br>
 		<p>Não possui uma conta?</p>
 		<a class="btn" href="sign-up.html">CADASTRAR</a>
