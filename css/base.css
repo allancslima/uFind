@@ -28,6 +28,17 @@ h1, h2, h3, h4, h5, h6 {
 .brand-gray {
 	color: #696969;
 }
+.brand-smaller {
+	font-size: 22px;
+}
+
+.footer {
+	width: 100%;
+	padding: 12px 0;
+	text-align: center;
+	background-color: #FFF;
+	border-top: 1px solid #cecece;
+}
 
 /* Forms */
 
