@@ -88,3 +88,37 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #fff;
 	color: #039be5;
 }
+
+.item {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+}
+.item p {
+	width: 100%;
+	margin: 8px 0;
+	line-height: 1.5em;
+}
+.item #user-action {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.item #header {
+	width: 100%;
+	flex-direction: row;
+}
+.item #header #title {
+	width: 75%;
+	text-align: left;
+	font-size: 17px;
+	font-weight: 700;
+}
+.item #header #created-at {
+	width: 25%;
+	text-align: right;
+}
+.item #category, #created-at {
+	font-size: 15px;
+	color: #999;
+}
