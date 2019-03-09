@@ -30,14 +30,17 @@ html, body {
 	width: 90%;
 	max-width: 800px;
 	height: auto;
-	min-height: 85%;
+	min-height: 90%;
 	margin: 0 auto;
-	padding: 20px 20px 0;
+	padding: 40px 20px 0;
 	box-sizing: border-box;
 	background-color: #fff;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	box-shadow: 0px 0px 10px #ccc;
+}
+#content > .btn {
+	margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
