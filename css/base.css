@@ -90,6 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #039be5;
 }
 
+/* Found/lost item */
+
 .item {
 	width: 100%;
 	max-width: 600px;
@@ -102,6 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5em;
 }
 .item #user-action {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -110,7 +115,6 @@ h1, h2, h3, h4, h5, h6 {
 	height: 50px;
 	margin-right: 10px;
 	border-radius: 50%;
-	vertical-align: middle;
 	background-color: #ccc;
 }
 .item #header {
