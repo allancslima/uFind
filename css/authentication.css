@@ -1,12 +1,13 @@
 body {
 	background-color: #f9f9f9;
-	padding: 8px;
+	padding: 20px;
 }
 form {
 	width: 100%;
 	max-width: 360px;
 	box-sizing: border-box;
-	margin: 10px auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 40px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
@@ -19,7 +20,7 @@ form .brand {
 form .field, .btn {
 	margin-top: 10px;
 }
-form input[type="submit"] {
+form input[type="button"] {
 	margin-top: 15px;
 }
 #forgot-password {
