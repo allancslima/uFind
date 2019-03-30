@@ -2,6 +2,8 @@ function showChatPopup(id) {
 	const popup = document.getElementById(id);
 	popup.classList.toggle('show');
 
+	if (!popup.classList.contains('show')) return;
+
 	const items = document.getElementsByClassName('item');
 	const itemsKeys = Object.keys(items);
 
