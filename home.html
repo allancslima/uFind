@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script src="js/base.js"></script>
 </head>
 <body>
 	<nav id="nav-home" class="container">
@@ -23,7 +24,10 @@
 	<main id="content" class="container">
 		<div class="container item">
 			<div id="user-action">
-				<img class="avatar" src="img/home/avatar_morty.png">
+				<div class="popup" onclick="showChatPopup('item_user_0')">
+					<img class="avatar" src="img/home/avatar_morty.png">
+					<span id="item_user_0" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Morty Smith</span>
+				</div>
 				<span><u>Morty Smith</u> <b>perdeu</b> algo...</span>
 			</div>
 			<div id="header" class="container">
@@ -40,7 +44,10 @@
 		</div>
 		<div class="container item">
 			<div id="user-action">
-				<img class="avatar" src="img/home/avatar_rick.png">
+				<div class="popup" onclick="showChatPopup('item_user_1')">
+					<img class="avatar" src="img/home/avatar_rick.png">
+					<span id="item_user_1" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
+				</div>
 				<span><u>Rick Sanchez</u> <b>entregou</b> um objeto encontrado ao dono.</span>
 			</div>
 			<div id="header" class="container">
@@ -51,7 +58,10 @@
 		</div>
 		<div class="container item">
 			<div id="user-action">
-				<img class="avatar" src="img/home/avatar_rick.png">
+				<div class="popup" onclick="showChatPopup('item_user_2')">
+					<img class="avatar" src="img/home/avatar_rick.png">
+					<span id="item_user_2" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
+				</div>
 				<span><u>Rick Sanchez</u> <b>achou</b> algo!</span>
 			</div>
 			<div id="header" class="container">
