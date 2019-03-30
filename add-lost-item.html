@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+	<title>uFind - Adicionar item perdido</title>
+	<link rel="icon" href="img/ic_pin.png">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/add-item.css">
+</head>
+<body>
+	<nav id="nav-home" class="container">
+		<a class="brand" href="home.html">uFind</a>
+		<ul class="container">
+			<li><a href="home.html">INÍCIO</a></li>
+			<li><a href="found.html">ACHADOS</a></li>
+			<li><a href="lost.html">PERDIDOS</a></li>
+			<li><a href="#">MINHAS PUBLICAÇÕES</a></li>
+		</ul>
+	</nav>
+
+	<main id="content" class="container">
+		<h2>Adicionar item perdido</h2>
+		<form class="container">
+			<input class="field" type="text" name="title" placeholder="Título">
+			<select class="field">
+				<option>Documento</option>
+				<option>Eletrônico</option>
+				<option>Livro</option>
+				<option>Pessoal</option>
+				<option>Outro</option>
+			</select>
+			<textarea class="field" placeholder="Descrição"></textarea>
+			<input class="field" type="text" name="local" placeholder="Local">
+			<div class="container reward">
+				<label class="switch">
+				  <input type="checkbox">
+				  <span class="slider round"></span>
+				</label>
+				<span>Recompensar?</span>
+				<input class="field" type="number" min="0" name="reward-value" placeholder="Valor em R$">
+			</div>
+			<input class="btn btn-match-parent btn-blue" type="submit" name="register" value="+ Adicionar">
+		</form>
+	</main>
+
+	<footer class="footer">
+		<span class="brand brand-gray brand-smaller">uFind</span> 
+	</footer>
+</body>
+</html>
