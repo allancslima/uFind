@@ -9,6 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/add-item.css">
+	<script>
+		function onClickReward() {
+			const rewardCheck = document.getElementById('reward-check');
+			const rewardValue = document.getElementById('reward-value');
+			
+			rewardValue.disabled = !rewardCheck.checked;
+		}
+	</script>
 </head>
 <body>
 	<nav id="nav-home" class="container">
@@ -18,12 +26,13 @@
 			<li><a href="found.html">ACHADOS</a></li>
 			<li><a href="lost.html">PERDIDOS</a></li>
 			<li><a href="#">MINHAS PUBLICAÇÕES</a></li>
+			<li><a href="index.html">Sair &nbsp;<i class="fas fa-sign-out-alt"></i></a></li>
 		</ul>
 	</nav>
 
 	<main id="content" class="container">
 		<h2>Adicionar item perdido</h2>
-		<form class="container" action="#" method="POST">
+		<form class="container" action="lost.html" method="POST">
 			<input class="field" type="text" name="title" placeholder="Título" required>
 			<select class="field">
 				<option>Documento</option>
@@ -35,12 +44,12 @@
 			<textarea class="field" name="description" placeholder="Descrição" required></textarea>
 			<input class="field" type="text" name="local" placeholder="Local" required>
 			<div class="container reward">
-				<label class="switch">
-				  <input type="checkbox">
+				<label onclick="onClickReward()" class="switch">
+				  <input id="reward-check" type="checkbox">
 				  <span class="slider round"></span>
 				</label>
 				<span>Recompensar?</span>
-				<input class="field" type="number" min="0" name="reward-value" placeholder="Valor em R$">
+				<input id="reward-value" class="field" type="number" min="10" step="10" name="reward-value" placeholder="Valor em R$" disabled required>
 			</div>
 			<input class="btn btn-match-parent btn-blue" type="submit" name="register" value="+ Adicionar">
 		</form>
