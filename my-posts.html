@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-	<title>uFind - Achados</title>
+	<title>uFind - Minhas publicações</title>
 	<link rel="icon" href="img/ic_pin.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/my-posts.css">
 	<script src="js/base.js"></script>
 </head>
 <body>
@@ -23,27 +24,14 @@
 	</nav>
 
 	<main id="content" class="container">
-		<h2>Achados</h2>
-		<a class="btn" href="add-found-item.html">+ Adicionar</a>
-		<div class="container item">
-			<div id="user-action">
-				<div class="popup" onclick="showChatPopup('item_user_0')">
-					<img class="avatar" src="img/home/avatar_rick.png">
-					<span id="item_user_0" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
-				</div>
-				<span><u>Rick Sanchez</u></span>
-			</div>
-			<div id="header" class="container">
-				<span id="title">Cartão Bem-Legal estudantil</span>
-				<span id="created-at">10/03/19, 15:27</span>
-			</div>
-			<p id="category">Documento</p>
-			<p>
-				Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está no nome de
-				Summer Smith.	Como não sei a que curso ela pertence, vou guardar o cartão até que a dona
-				apareça.
-			</p>
-			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
+		<h2>Minhas publicações</h2>
+		<br>
+		<div class="container post">
+			<span id="title"><i style="color: #43a047;" class="fas fa-check"></i>&nbsp; Cartão Bem-Legal estudantil</span>
+			<p id="short-description">Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está no nome de Summer Smith. Como...</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Hall do IC</p>
+			<br>
+			<i class="far fa-edit"></i>
 		</div>
 	</main>
 
