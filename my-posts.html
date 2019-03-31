@@ -9,7 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/my-posts.css">
-	<script src="js/base.js"></script>
+	<script>
+		function onClickPost() {
+			window.location.href = "post.html";
+		}
+	</script>
 </head>
 <body>
 	<nav id="nav-home" class="container">
@@ -26,13 +30,35 @@
 	<main id="content" class="container">
 		<h2>Minhas publicações</h2>
 		<br>
-		<div class="container post">
+		<div class="container post" onclick="onClickPost()">
 			<span id="title"><i style="color: #43a047;" class="fas fa-check"></i>&nbsp; Cartão Bem-Legal estudantil</span>
-			<p id="short-description">Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está no nome de Summer Smith. Como...</p>
-			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Hall do IC</p>
+			<p id="short-description">Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está...</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
 			<br>
 			<i class="far fa-edit"></i>
 		</div>
+		<div class="container post">
+			<span id="title">Cartão Bem-Legal estudantil</span>
+			<p id="short-description">Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está...</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
+			<br>
+			<i class="far fa-edit"></i>
+		</div>
+		<div class="container post">
+			<span id="title">Cartão Bem-Legal estudantil</span>
+			<p id="short-description">Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está...</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
+			<br>
+			<i class="far fa-edit"></i>
+		</div>
+		<div class="container post">
+			<span id="title"><i style="color: #43a047;" class="fas fa-check"></i>&nbsp; Cartão Bem-Legal estudantil</span>
+			<p id="short-description">Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está...</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
+			<br>
+			<i class="far fa-edit"></i>
+		</div>
+		<br><br>
 	</main>
 
 	<footer class="footer">
