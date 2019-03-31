@@ -1,0 +1,42 @@
+.post {
+	align-items: flex-start;
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.post p {
+	color: #000;
+	opacity: 0.3;
+}
+.post > i {
+	visibility: hidden;
+}
+.post:hover {
+	border: 2px solid #eee;
+}
+.post:hover > i {
+	visibility: visible;
+}
+.post #title {
+	font-size: 17px;
+	font-weight: 700;
+}
+.post #short-description {
+	margin-bottom: 0px;
+}
+
+.label {
+	padding: 5px 7px;
+	background-color: #ccc;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.found-label {
+	background-color: #26a69a;
+}
+.lost-label {
+	background-color: #ef5350;
+}

@@ -5,6 +5,9 @@ main form {
 main form > input, select, textarea, .reward {
 	margin-bottom: 10px;
 }
+main form textarea {
+  line-height: 24px;
+}
 main form .reward {
 	align-items: flex-start;
 	width: 100%;

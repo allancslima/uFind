@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-	<title>uFind - Adicionar item achado</title>
+	<title>uFind - Publicação</title>
 	<link rel="icon" href="img/ic_pin.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/add-item.css">
+	<script src="js/base.js"></script>
 </head>
 <body>
 	<nav id="nav-home" class="container">
@@ -23,9 +24,9 @@
 	</nav>
 
 	<main id="content" class="container">
-		<h2>Adicionar item achado</h2>
-		<form class="container" action="found.html" method="POST">
-			<input class="field" type="text" name="title" placeholder="Título" required>
+		<h2>Editar publicação</h2>
+		<form class="container" action="my-posts.html" method="POST">
+			<input class="field" type="text" name="title" value="Cartão Bem-Legal estudantil" placeholder="Título" required>
 			<select class="field">
 				<option>Documento</option>
 				<option>Eletrônico</option>
@@ -33,9 +34,9 @@
 				<option>Pessoal</option>
 				<option>Outro</option>
 			</select>
-			<textarea rows="7" class="field" name="description" placeholder="Descrição" required></textarea>
-			<input class="field" type="text" name="local" placeholder="Local" required>
-			<input class="btn btn-match-parent btn-blue" type="submit" name="register" value="+ Adicionar">
+			<textarea rows="7" class="field" name="description" placeholder="Descrição" required>Encontrei um bem-legal estudantil caido no chão do ponto da passarela. Está no nome de Summer Smith. Como não sei a que curso ela pertence, vou guardar o cartão até que a dona apareça.</textarea>
+			<input class="field" type="text" name="local" value="Ponto da passarela" placeholder="Local" required>
+			<input class="btn btn-match-parent btn-blue" type="submit" name="register" value="Atualizar">
 		</form>
 	</main>
 
