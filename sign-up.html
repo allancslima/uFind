@@ -10,14 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="css/authentication.css">
 </head>
 <body>
-	<form class="container">
+	<form class="container" action="home.html" method="POST">
 		<a class="brand brand-gray" href="index.html">uFind</a>
-		<input class="field" type="text" name="name" placeholder="Nome e sobrenome">
-		<input class="field" type="text" name="course" placeholder="Curso">
-		<input class="field" type="text" name="phone" placeholder="Celular">
-		<input class="field" type="email" name="email" placeholder="Email">
-		<input class="field" type="password" name="password" placeholder="Senha">
-		<input class="field" type="password" name="confirm-password" placeholder="Confirmar senha">
+		<input class="field" type="text" name="name" placeholder="Nome e sobrenome" required>
+		<input class="field" type="text" name="course" placeholder="Curso" required>
+		<input class="field" type="tel" name="phone" placeholder="Celular" required>
+		<input class="field" type="email" name="email" placeholder="Email" required>
+		<input class="field" type="password" name="password" placeholder="Senha" required>
+		<input class="field" type="password" name="confirm-password" placeholder="Confirmar senha" required>
 		<input class="btn btn-match-parent btn-blue" type="submit" name="register" value="CADASTRAR">
 		<br><br>
 		<p>Já possui uma conta?</p>

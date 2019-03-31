@@ -11,14 +11,14 @@
 	<script src="js/sign-in.js"></script>
 </head>
 <body>
-	<form class="container">
+	<form class="container" action="home.html" method="POST">
 		<a class="brand brand-gray" href="index.html">uFind</a>
-		<input class="field" type="email" name="email" placeholder="Email">
-		<input class="field" type="password" name="password" placeholder="Senha">
+		<input class="field" type="email" name="email" placeholder="Email" required>
+		<input class="field" type="password" name="password" placeholder="Senha" required>
 		<div id="forgot-password">
 			<a href="forgot-password.html"><b>Esqueceu a senha?</b></a>
 		</div>
-		<input class="btn btn-match-parent btn-blue" type="button" value="ENTRAR" onclick="login()">
+		<input class="btn btn-match-parent btn-blue" type="submit" value="ENTRAR">
 		<br><br>
 		<p>Não possui uma conta?</p>
 		<a class="btn" href="sign-up.html">CADASTRAR</a>

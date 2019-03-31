@@ -23,8 +23,8 @@
 
 	<main id="content" class="container">
 		<h2>Adicionar item perdido</h2>
-		<form class="container">
-			<input class="field" type="text" name="title" placeholder="Título">
+		<form class="container" action="#" method="POST">
+			<input class="field" type="text" name="title" placeholder="Título" required>
 			<select class="field">
 				<option>Documento</option>
 				<option>Eletrônico</option>
@@ -32,8 +32,8 @@
 				<option>Pessoal</option>
 				<option>Outro</option>
 			</select>
-			<textarea class="field" placeholder="Descrição"></textarea>
-			<input class="field" type="text" name="local" placeholder="Local">
+			<textarea class="field" name="description" placeholder="Descrição" required></textarea>
+			<input class="field" type="text" name="local" placeholder="Local" required>
 			<div class="container reward">
 				<label class="switch">
 				  <input type="checkbox">
