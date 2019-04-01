@@ -9,6 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script src="js/base.js"></script>
+	<script>
+		function openChat() {
+		  document.getElementById("chat").style.display = "block";
+		}
+
+		function closeChat() {
+		  document.getElementById("chat").style.display = "none";
+		}
+	</script>
 </head>
 <body>
 	<nav id="nav-home" class="container">
@@ -28,7 +37,7 @@
 			<div id="user-action">
 				<div class="popup" onclick="showChatPopup('item_user_0')">
 					<img class="avatar" src="img/home/avatar_morty.png">
-					<span id="item_user_0" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Morty Smith</span>
+					<span id="item_user_0" class="popuptext" onclick="openChat()"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Morty Smith</span>
 				</div>
 				<span><u>Morty Smith</u> <b>perdeu</b> algo...</span>
 			</div>
@@ -79,6 +88,18 @@
 			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
 		</div>
 	</main>
+
+	<button class="open-button" onclick="openChat()"><i class="fas fa-comment-alt"></i></button>
+	<div id="chat" class="container chat-popup">
+		<div id="header" class="container">
+			<i class="fas fa-arrow-left" onclick="closeChat()"></i>
+			<img class="avatar" src="img/home/avatar_morty.png">
+			<span>Morty Smith</span>
+		</div>
+		<div id="messages">
+		</div>
+		<input class="field" type="text" name="message" placeholder="Digite sua mensagem">
+	</div>
 
 	<footer class="footer">
 		<span class="brand brand-gray brand-smaller">uFind</span> 

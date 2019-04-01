@@ -25,7 +25,6 @@ html, body {
 #nav-home ul li a:hover {
 	background-color: #0288d1;
 }
-
 #content {
 	width: 100%;
 	max-width: 800px;
@@ -58,4 +57,51 @@ html, body {
 		margin: 0;
 		flex-direction: row;
 	}
+}
+
+.open-button {
+  position: fixed;
+  bottom: 15px;
+  right: 28px;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  background-color: #039be5;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.chat-popup {
+	width: 300px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 1px solid #f1f1f1;
+  z-index: 9;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #ccc;
+  box-sizing: border-box;
+}
+.chat-popup #header {
+	flex-direction: row;
+}
+.chat-popup #header i {
+	font-size: 18px;
+	cursor: pointer;
+}
+.chat-popup #header .avatar {
+	margin-right: 10px;
+	margin-left: 20px;
+}
+.chat-popup #header span {
+	font-size: 15px;
+	font-weight: 700;
+}
+.chat-popup #messages {
+	height: 300px;
+	margin: 10px 0;
+	border: 1px solid #eee;
 }
