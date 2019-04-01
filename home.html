@@ -9,6 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script src="js/base.js"></script>
+	<script>
+		function openChat() {
+		  document.getElementById("chat").style.display = "block";
+		}
+
+		function closeChat() {
+		  document.getElementById("chat").style.display = "none";
+		}
+	</script>
 </head>
 <body>
 	<nav id="nav-home" class="container">
@@ -24,17 +33,105 @@
 
 	<main id="content" class="container">
 		<h2>Atividade</h2>
+
 		<div class="container item">
 			<div id="user-action">
 				<div class="popup" onclick="showChatPopup('item_user_0')">
+					<img class="avatar" src="img/home/avatar_patrick.png">
+					<span id="item_user_0" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Patrick Estrela</span>
+				</div>
+				<span><u>Patrick Estrela</u> <b>encontrou</b> seu objeto perdido.</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Placa de vídeo</span>
+				<span id="created-at">26/03/19, 13:30</span>
+			</div>
+			<p id="category">Eletrônico</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_1')">
+					<img class="avatar" src="img/home/avatar_mr_krabs.png">
+					<span id="item_user_1" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Seu Siriguejo</span>
+				</div>
+				<span><u>Seu Siriguejo</u> <b>perdeu</b> algo...</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Dólar</span>
+				<span id="created-at">23/03/19, 15:39</span>
+			</div>
+			<p id="category">Pessoal</p>
+			<p>
+				Perdi meu primeiro dólar, ele está em uma moldura, na última aula de programação, muito grato a quem encontrar.
+			</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Lab 1</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_2')">
+					<img class="avatar" src="img/home/avatar_patrick.png">
+					<span id="item_user_2" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Patrick Estrela</span>
+				</div>
+				<span><u>Patrick Estrela</u> <b>perdeu</b> algo...</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Placa de vídeo</span>
+				<span id="created-at">22/03/19, 10:27</span>
+			</div>
+			<p id="category">Eletrônico</p>
+			<p>
+				Perdi minha placa de vídeo, muito provavelmente no auditório que acontece a aula de geometria, grato a quem encontrar.
+			</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Auditório do IC</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_3')">
+					<img class="avatar" src="img/home/avatar_sandy.png">
+					<span id="item_user_3" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Sandy Bochechas</span>
+				</div>
+				<span><u>Sandy Bochechas</u> <b>entregou</b> um objeto encontrado ao dono.</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Espátula prata</span>
+				<span id="created-at">20/03/19, 11:25</span>
+			</div>
+			<p id="category">Outro</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_4')">
+					<img class="avatar" src="img/home/avatar_sandy.png">
+					<span id="item_user_4" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Sandy Bochechas</span>
+				</div>
+				<span><u>Sandy Bochechas</u> <b>encontrou</b> algo!</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Espátula prata</span>
+				<span id="created-at">15/03/19, 16:35</span>
+			</div>
+			<p id="category">Outro</p>
+			<p>
+				Encontrei uma espátula no lab 3, que já foi retornada ao dono, nas palavras dele “foi o melhor dia de todos”.
+			</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: IC, lab 3</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_5')">
 					<img class="avatar" src="img/home/avatar_morty.png">
-					<span id="item_user_0" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Morty Smith</span>
+					<span id="item_user_5" class="popuptext" onclick="openChat()"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Morty Smith</span>
 				</div>
 				<span><u>Morty Smith</u> <b>perdeu</b> algo...</span>
 			</div>
 			<div id="header" class="container">
 				<span id="title">Pendrive preto</span>
-				<span id="created-at">06/03/19, 19:42</span>
+				<span id="created-at">14/03/19, 19:42</span>
 			</div>
 			<p id="category">Eletrônico</p>
 			<p>
@@ -44,11 +141,31 @@
 			</p>
 			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Hall do IC</p>
 		</div>
+
 		<div class="container item">
 			<div id="user-action">
-				<div class="popup" onclick="showChatPopup('item_user_1')">
+				<div class="popup" onclick="showChatPopup('item_user_6')">
+					<img class="avatar" src="img/home/avatar_patrick.png">
+					<span id="item_user_6" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Patrick Estrela</span>
+				</div>
+				<span><u>Patrick Estrela</u> <b>encontrou</b> algo!</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Boneco do amendobobo</span>
+				<span id="created-at">13/03/19, 20:15</span>
+			</div>
+			<p id="category">Outro</p>
+			<p>
+				Encontrei um action figure do amendobobo, ele é roxo e tem mais ou menos 2 metros, deixei na secretaria, o nome do dono esta escrito embaixo.
+			</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Hall do IC</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_7')">
 					<img class="avatar" src="img/home/avatar_rick.png">
-					<span id="item_user_1" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
+					<span id="item_user_7" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
 				</div>
 				<span><u>Rick Sanchez</u> <b>entregou</b> um objeto encontrado ao dono.</span>
 			</div>
@@ -58,11 +175,12 @@
 			</div>
 			<p id="category">Documento</p>
 		</div>
+		
 		<div class="container item">
 			<div id="user-action">
-				<div class="popup" onclick="showChatPopup('item_user_2')">
+				<div class="popup" onclick="showChatPopup('item_user_8')">
 					<img class="avatar" src="img/home/avatar_rick.png">
-					<span id="item_user_2" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
+					<span id="item_user_8" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Rick Sanchez</span>
 				</div>
 				<span><u>Rick Sanchez</u> <b>achou</b> algo!</span>
 			</div>
@@ -78,7 +196,58 @@
 			</p>
 			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: Ponto da passarela</p>
 		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_9')">
+					<img class="avatar" src="img/home/avatar_bob.png">
+					<span id="item_user_9" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Bob Esponja</span>
+				</div>
+				<span><u>Bob Esponja</u> <b>perdeu</b> algo...</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Espátula prata</span>
+				<span id="created-at">05/03/19, 16:35</span>
+			</div>
+			<p id="category">Outro</p>
+			<p>
+				Perdi a minha espátula favorita no laboratório 3 por volta das 15 horas.
+				Ela é prata com um cabo preto, preciso urgentemente para fazer mais hamburgueres.
+			</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: IC, lab 3</p>
+		</div>
+
+		<div class="container item">
+			<div id="user-action">
+				<div class="popup" onclick="showChatPopup('item_user_10')">
+					<img class="avatar" src="img/home/avatar_squidward.png">
+					<span id="item_user_10" class="popuptext"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;Lula Molusco</span>
+				</div>
+				<span><u>Lula Molusco</u> <b>perdeu</b> algo...</span>
+			</div>
+			<div id="header" class="container">
+				<span id="title">Clarinete</span>
+				<span id="created-at">01/03/19, 13:50</span>
+			</div>
+			<p id="category">Outro</p>
+			<p>
+				Perdi meu clarinete principal hoje, preciso dele com urgência, não lembro em qual sala está, a minha apresentação é hoje, estou disposto a pegar a qualquer momento na UFAL.
+			</p>
+			<p><i class="fas fa-map-marker-alt"></i>&nbsp; Local: algum lab do IC</p>
+		</div>
 	</main>
+
+	<button class="open-button" onclick="openChat()"><i class="fas fa-comment-alt"></i></button>
+	<div id="chat" class="container chat-popup">
+		<div id="header" class="container">
+			<i class="fas fa-arrow-left" onclick="closeChat()"></i>
+			<img class="avatar" src="img/home/avatar_morty.png">
+			<span>Morty Smith</span>
+		</div>
+		<div id="messages">
+		</div>
+		<input class="field" type="text" name="message" placeholder="Digite sua mensagem">
+	</div>
 
 	<footer class="footer">
 		<span class="brand brand-gray brand-smaller">uFind</span> 
